@@ -1,0 +1,75 @@
+﻿@{
+    ViewData["Title"] = "Table Content";
+}
+
+<header class='container-fluid'>
+ <div class="btn-group">
+  <button type="button" class="btn btn-outline-secondary" id='menuSelect'>MENU ITEMS</button>
+  <button type="button" class="btn btn-outline-secondary " id='orderSelect'>ORDER</button>
+</div>
+<div class="input-group mt-2 mb-3">
+      <input type="search" id='menuSearch' class="form-control" placeholder="Search menu items" onkeyup='menuFunction()' >
+</div>
+</header>
+<body id='body'>
+<section class='container-fluid' id='menuList'>
+<a class='d-flex' id='menu-item'>
+<img src='~/img/image1.jpg' alt='image1'/>
+<div id='descriptionDiv'>
+    <h5>Hot pot</h5>
+    <h6>Rs.500</h6>
+</div>
+
+</a>
+<a class='d-flex' id='menu-item'>
+<img src='~/img/image2.jpg' alt='image2'/>
+<div id='descriptionDiv'>
+    <h5>Biryani</h5>
+    <h6>Rs.300</h6>
+</div>
+
+</a>
+<a class='d-flex' id='menu-item'>
+<img src='~/img/image3.jpg' alt='image3'/>
+<div id='descriptionDiv'>
+    <h5>Strawberry Icecream</h5>
+    <h6>Rs.150</h6>
+</div>
+
+</a>
+</section>
+</body>
+
+
+
+
+
+
+
+
+
+
+<section class='container-fluid mt-5 ' id='order'>
+    <div class='d-flex'>
+        <div class='col-md-2'>
+         <button id='dec'>-</button>
+        </div>
+        <div class='col-md-8' id='main-content'>
+          <article style='margin-left:20px'>
+              <h5>Strawberry Icecream</h5>
+              <h6 style='margin-top:-10px'>Rs.150</h6>
+          </article>
+        </div>
+        <div class='col-md-2'>
+         <button id='inc'>+</button>
+        </div>
+    </div>
+</section>
+<hr />
+<div class="total" style='float:right'><h4>TOTAL:RS.<span id="total">0</span></h4></div>
+
+
+
+
+
+

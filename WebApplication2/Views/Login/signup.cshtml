@@ -1,0 +1,28 @@
+﻿@{
+    ViewData["Title"] = "Signup";
+}
+
+<div class="container pt-5">
+    <div class="row justify-content-md-center">
+        <div class="col-6 border border-dark">
+            <h3 class="text-center">Sign Up</h3>
+            <hr/>
+            <form method="post" class="p-3">
+                <label for="phone">Mobile number</label>
+                <input type="text" for="phone" class="form-control" />
+
+                <label for="email">Email</label>
+                <input type="email" class="form-control" />
+                <br />
+                <button type="submit" class="btn btn-success form-control" asp-controller="Home" asp-action="Privacy">Sign Up</button>
+                <div class="row">
+                    <div class="col-md-auto pt-3">
+                        <p>Already have an account?</p>
+                        <a href="~/Login/login">Login</a>
+                    </div>                
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+

@@ -1,0 +1,31 @@
+﻿@{
+    ViewData["Title"] = "Table";
+}
+
+<nav class="navbar navbar-light bg-light">
+  <form class="container-fluid">
+    <div class="input-group">
+      <input type="search" id='mySearch' class="form-control" placeholder="Search table"  onkeyup="myFunction()">
+    </div>
+  </form>
+</nav>
+<section class='table-center' style="background-color:#F5F5F5">
+   
+       <div class="grid-container" id='myDiv'>
+       <a  asp-controller="Table" asp-action="Tablecontent">
+           <div class="grid-item">T1</div>
+       </a>
+       <a asp-controller="Table" asp-action="Tablecontent"><div class="grid-item">T2</div></a>
+       <a asp-controller="Table" asp-action="Tablecontent"><div class="grid-item">T3</div> </a>  
+       <a asp-controller="Table" asp-action="Tablecontent"><div class="grid-item">T4</div></a> 
+       <a asp-controller="Table" asp-action="Tablecontent"><div class="grid-item">T5</div></a>
+       <a asp-controller="Table" asp-action="Tablecontent"><div class="grid-item">T6</div> </a> 
+       <a asp-controller="Table" asp-action="Tablecontent"><div class="grid-item">T7</div></a> 
+       <a asp-controller="Table" asp-action="Tablecontent"><div class="grid-item">T8</div></a>
+   
+        </div>
+
+    
+  
+
+</section>
